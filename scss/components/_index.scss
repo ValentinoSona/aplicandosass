@@ -1,0 +1,138 @@
+@import "../base/variables";
+
+/* GRID */
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 70% auto;
+    grid-template-rows: 100% auto;
+    grid-template-areas:
+    "main-section1 main-section2" 
+    ;
+    @media only screen and (max-width:480px){
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+        "main-section1"
+        "main-section2";
+    }    
+}
+/* FIN GRID */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+   }
+   
+   
+.main h2{
+    padding: 20px 0 5px 80px;
+    font-size: 25px;
+    @media only screen and (max-width:480px){
+        padding: 20px 0 10px 40px;
+        font-size: 20px;
+    }    
+}
+
+.main-section1{
+    margin: 10px 10px 10px 10px;
+    border: solid black 3px;
+    display: flex;
+    grid-area: main-section1;
+    @media only screen and (max-width:480px){
+        margin: 10px 10px 0px 10px;
+        border: solid black 3px;
+        display: flex;
+        grid-area: main-section1;
+        flex-direction: column;
+        height: 60vh;
+    }    
+}
+
+.main-section2{
+    grid-area:main-section2;
+}
+
+.articulo, .articulo2{
+    display: flex;
+    padding: 0 0 10px 80px;
+    @media only screen and (max-width:480px){
+        display: flex;
+        padding: 0 0 20px 40px;
+    }    
+}
+
+
+
+.seguir{
+    width: 50%;
+    margin: 10px 0 30px 80px;
+    background-color: rgb(247, 6, 26);
+    @media only screen and (max-width:480px){
+        width: 80%;
+        margin: 10px 0 30px 40px;
+        background-color: rgb(247, 6, 26);
+    }    
+}
+
+.main__imagen{
+     width: 50%;
+}
+
+
+
+.articulo-text{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    @media only screen and (max-width:480px){
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }    
+}
+
+.subtitulo{
+    width: 100%;
+}
+
+.main__parrafo{
+    width: 100%;
+}
+
+.ultimos{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.ultimos h3{
+   text-align: center;
+   margin-top: 50px;
+   font-size: 30px;
+   @media only screen and (max-width:480px){
+    text-align: center;
+    font-size: 30px;
+   }
+}
+
+
+.ultimos__imagen{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    width: 200px;
+    
+    
+}
+
+.ultimos__subtitulo{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 15px;
+}

@@ -1,0 +1,51 @@
+@import "../base/variables";
+
+.footer{
+    background-color: $bg-menu;
+    @media only screen and (max-width:480px){
+        font-size: 10px;
+    }    
+}
+
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+   }
+   
+   
+   .contactanos{
+       padding: 0 0 10px 50px;
+       color: white;
+       @media only screen and (max-width:480px){
+        padding-right: 10px;
+        margin-right: 10px;
+       }  
+   }
+   
+   .icono{
+       color: rgb(255, 0, 0);
+       padding: 0 0 30px 20px;
+       font-size: 30px;
+       
+       
+   }
+   
+   .copy{
+      color: white;
+   }
+   
+   .footer_list{
+       display: flex;
+       flex-direction: column;
+       list-style-type: none;
+       padding-right: 30px;
+       color: white;
+      
+   }
+   
+   
+   .footer__item a{
+       color: rgb(255, 0, 0);
+   }

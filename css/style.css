@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+.cabecera {
+  background-color: rgb(0, 0, 0);
+}
+@media only screen and (max-width: 480px) {
+  .cabecera {
+    object-fit: contain;
+  }
+}
+
+.cabecera__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cabecera__logo {
+  width: 250px;
+  padding: 20px 0 0 10px;
+}
+@media only screen and (max-width: 480px) {
+  .cabecera__logo {
+    width: 75px;
+  }
+}
+
+.cabecera__buscador {
+  align-self: center;
+  width: 30%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.cabecera__lista {
+  display: flex;
+  align-self: center;
+  padding: 0 40px 0 0;
+}
+
+.cabecera__lista__item,
+.material-symbols-outlined {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .cabecera__lista__item {
+    font-size: 10px;
+    align-self: center;
+    padding: 5px;
+    margin-left: 10px;
+  }
+}
+
+.link {
+  color: white;
+}
+
+/* GRID */
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 70% auto;
+  grid-template-rows: 100% auto;
+  grid-template-areas: "main-section1 main-section2";
+}
+@media only screen and (max-width: 480px) {
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: "main-section1" "main-section2";
+  }
+}
+
+/* FIN GRID */
+.banner {
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  width: 100%;
+}
+
+.main h2 {
+  padding: 20px 0 5px 80px;
+  font-size: 25px;
+}
+@media only screen and (max-width: 480px) {
+  .main h2 {
+    padding: 20px 0 10px 40px;
+    font-size: 20px;
+  }
+}
+
+.main-section1 {
+  margin: 10px 10px 10px 10px;
+  border: solid black 3px;
+  display: flex;
+  grid-area: main-section1;
+}
+@media only screen and (max-width: 480px) {
+  .main-section1 {
+    margin: 10px 10px 0px 10px;
+    border: solid black 3px;
+    display: flex;
+    grid-area: main-section1;
+    flex-direction: column;
+    height: 60vh;
+  }
+}
+
+.main-section2 {
+  grid-area: main-section2;
+}
+
+.articulo, .articulo2 {
+  display: flex;
+  padding: 0 0 10px 80px;
+}
+@media only screen and (max-width: 480px) {
+  .articulo, .articulo2 {
+    display: flex;
+    padding: 0 0 20px 40px;
+  }
+}
+
+.seguir {
+  width: 50%;
+  margin: 10px 0 30px 80px;
+  background-color: rgb(247, 6, 26);
+}
+@media only screen and (max-width: 480px) {
+  .seguir {
+    width: 80%;
+    margin: 10px 0 30px 40px;
+    background-color: rgb(247, 6, 26);
+  }
+}
+
+.main__imagen {
+  width: 50%;
+}
+
+.articulo-text {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  .articulo-text {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.subtitulo {
+  width: 100%;
+}
+
+.main__parrafo {
+  width: 100%;
+}
+
+.ultimos {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.ultimos h3 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px;
+}
+@media only screen and (max-width: 480px) {
+  .ultimos h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+.ultimos__imagen {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  width: 200px;
+}
+
+.ultimos__subtitulo {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+}
+@media only screen and (max-width: 480px) {
+  .footer {
+    font-size: 10px;
+  }
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+}
+
+.contactanos {
+  padding: 0 0 10px 50px;
+  color: white;
+}
+@media only screen and (max-width: 480px) {
+  .contactanos {
+    padding-right: 10px;
+    margin-right: 10px;
+  }
+}
+
+.icono {
+  color: rgb(255, 0, 0);
+  padding: 0 0 30px 20px;
+  font-size: 30px;
+}
+
+.copy {
+  color: white;
+}
+
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-right: 30px;
+  color: white;
+}
+
+.footer__item a {
+  color: rgb(255, 0, 0);
+}
+
+/*# sourceMappingURL=style.css.map */

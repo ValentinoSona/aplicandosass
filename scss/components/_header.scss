@@ -1,0 +1,58 @@
+@import "../base/variables";
+
+.cabecera{
+    background-color:$bg-menu;
+    @media only screen and (max-width:480px){
+        object-fit: contain;
+    }    
+}
+
+.cabecera__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.cabecera__logo{
+    width: 250px;
+    padding: 20px 0 0 10px;
+    @media only screen and (max-width:480px){
+        width: 75px;
+    }    
+}
+
+.cabecera__buscador{        
+    align-self: center;
+    width: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cabecera__lista{
+    display: flex;
+    align-self: center;
+    padding: 0 40px 0 0;
+}
+
+
+.cabecera__lista__item, 
+.material-symbols-outlined{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.cabecera__lista__item{
+    @media only screen and (max-width:480px){
+        font-size: 10px;
+        align-self: center;
+        padding: 5px;
+        margin-left: 10px;
+    }    
+}
+
+.link{
+ color: white;
+}
