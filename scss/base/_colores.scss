@@ -1,0 +1,11 @@
+$color-primario:rgb(247, 6, 26);
+$color-secundario:black;
+
+.seguir{
+    background-color: darken($color-primario, 20%);
+    color: $color-secundario;
+    &:hover{
+        background-color: $color-secundario;
+        color: $color-primario;
+    }
+}

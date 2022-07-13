@@ -64,6 +64,28 @@
   color: white;
 }
 
+/* mapas
+1- tienen una key y un valor
+2- un grupo de propiedades no necesariamente de la misma familia */
+/* .standard {
+    background-color: map-get($standard, bg-standard);
+} */
+/* mixin incluyen un parametro (variable) vacio/a al cual le voy a dar un valor en un futuro cercano, o sea cuando lo utilice */
+/* constructores - armamos una estructura que vamos a reutilizar en varios elementos, pero sin saber necesariamente el valor de cada propiedad */
+/* .transform-one {
+    @include prefijos(translate(50%));
+} */
+/* .miedo{
+    @include varios (50%, grid, flex-end */
+/* bolsitas de propiedades que podemos reutilizar en muchos lugares */
+/* % + nombre {las propiedades}*/
+.seguir {
+  width: 50%;
+  margin: 10px 0 30px 80px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
 /* GRID */
 .grid-container {
   display: grid;
@@ -91,12 +113,18 @@
 }
 
 .main h2 {
-  padding: 20px 0 5px 80px;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 5px;
+  padding-left: 80px;
   font-size: 25px;
 }
 @media only screen and (max-width: 480px) {
   .main h2 {
-    padding: 20px 0 10px 40px;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-left: 40px;
     font-size: 20px;
   }
 }
@@ -124,25 +152,25 @@
 
 .articulo, .articulo2 {
   display: flex;
-  padding: 0 0 10px 80px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 80px;
 }
 @media only screen and (max-width: 480px) {
   .articulo, .articulo2 {
     display: flex;
-    padding: 0 0 20px 40px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 40px;
   }
 }
 
-.seguir {
-  width: 50%;
-  margin: 10px 0 30px 80px;
-  background-color: rgb(247, 6, 26);
-}
 @media only screen and (max-width: 480px) {
   .seguir {
     width: 80%;
     margin: 10px 0 30px 40px;
-    background-color: rgb(247, 6, 26);
   }
 }
 
@@ -174,7 +202,9 @@
 .ultimos {
   display: flex;
   flex-direction: column;
+  padding-top: 0;
   padding-right: 50px;
+  padding-bottom: 0;
   padding-left: 20px;
   align-items: center;
 }
@@ -193,7 +223,9 @@
 
 .ultimos__imagen {
   padding-top: 40px;
+  padding-right: 0;
   padding-bottom: 10px;
+  padding-left: 0;
   width: 200px;
 }
 
@@ -251,5 +283,37 @@
 .footer__item a {
   color: rgb(255, 0, 0);
 }
+
+/* mapas
+1- tienen una key y un valor
+2- un grupo de propiedades no necesariamente de la misma familia */
+/* .standard {
+    background-color: map-get($standard, bg-standard);
+} */
+.seguir {
+  background-color: #930410;
+  color: black;
+}
+.seguir:hover {
+  background-color: black;
+  color: rgb(247, 6, 26);
+}
+
+/* bolsitas de propiedades que podemos reutilizar en muchos lugares */
+/* % + nombre {las propiedades}*/
+.seguir {
+  width: 50%;
+  margin: 10px 0 30px 80px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+/* mixin incluyen un parametro (variable) vacio/a al cual le voy a dar un valor en un futuro cercano, o sea cuando lo utilice */
+/* constructores - armamos una estructura que vamos a reutilizar en varios elementos, pero sin saber necesariamente el valor de cada propiedad */
+/* .transform-one {
+    @include prefijos(translate(50%));
+} */
+/* .miedo{
+    @include varios (50%, grid, flex-end */
 
 /*# sourceMappingURL=style.css.map */

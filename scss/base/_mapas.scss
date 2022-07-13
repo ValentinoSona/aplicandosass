@@ -1,0 +1,14 @@
+/* mapas
+1- tienen una key y un valor
+2- un grupo de propiedades no necesariamente de la misma familia */
+
+$indexmap: (
+    width:100%,
+    mediowidth: 50%,
+    flexbox-standard: flex
+);
+
+
+/* .standard {
+    background-color: map-get($standard, bg-standard);
+} */

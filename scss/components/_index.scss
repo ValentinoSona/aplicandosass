@@ -1,4 +1,7 @@
 @import "../base/variables";
+@import "../base/mapas";
+@import "../base/mixins";
+@import "../base/extends";
 
 /* GRID */
 .grid-container{
@@ -22,18 +25,18 @@
 /* FIN GRID */
 
 .banner{
-    display: flex;
+    display: map-get($indexmap, flexbox-standard);
     justify-content: center;
     height: 20vh;
-    width: 100%;
+    width: map-get($indexmap, width);
    }
    
    
 .main h2{
-    padding: 20px 0 5px 80px;
+    @include padding (20px, 0 , 5px, 80px);
     font-size: 25px;
     @media only screen and (max-width:480px){
-        padding: 20px 0 10px 40px;
+        @include padding (20px, 0 , 10px, 40px);
         font-size: 20px;
     }    
 }
@@ -41,12 +44,12 @@
 .main-section1{
     margin: 10px 10px 10px 10px;
     border: solid black 3px;
-    display: flex;
+    display: map-get($indexmap,flexbox-standard);
     grid-area: main-section1;
     @media only screen and (max-width:480px){
         margin: 10px 10px 0px 10px;
         border: solid black 3px;
-        display: flex;
+        display: map-get($indexmap,flexbox-standard);
         grid-area: main-section1;
         flex-direction: column;
         height: 60vh;
@@ -58,29 +61,26 @@
 }
 
 .articulo, .articulo2{
-    display: flex;
-    padding: 0 0 10px 80px;
+    display: map-get($indexmap,flexbox-standard);
+    @include padding (0, 0 , 10px, 80px);
     @media only screen and (max-width:480px){
-        display: flex;
-        padding: 0 0 20px 40px;
+        display: map-get($indexmap,flexbox-standard);
+        @include padding (0, 0 , 20px, 40px);
     }    
 }
 
 
 
 .seguir{
-    width: 50%;
-    margin: 10px 0 30px 80px;
-    background-color: rgb(247, 6, 26);
+    @extend %botones;
     @media only screen and (max-width:480px){
         width: 80%;
         margin: 10px 0 30px 40px;
-        background-color: rgb(247, 6, 26);
     }    
 }
 
 .main__imagen{
-     width: 50%;
+    width: map-get($indexmap,mediowidth);
 }
 
 
@@ -97,18 +97,17 @@
 }
 
 .subtitulo{
-    width: 100%;
+    width: map-get($indexmap,width);
 }
 
 .main__parrafo{
-    width: 100%;
+    width: map-get($indexmap,width);
 }
 
 .ultimos{
-    display: flex;
+    display: map-get($indexmap,flexbox-standard);
     flex-direction: column;
-    padding-right: 50px;
-    padding-left: 20px;
+    @include padding (0, 50px , 0, 20px);
     align-items: center;
 }
 
@@ -124,8 +123,7 @@
 
 
 .ultimos__imagen{
-    padding-top: 40px;
-    padding-bottom: 10px;
+    @include padding (40px, 0 , 10px, 0);
     width: 200px;
     
     
